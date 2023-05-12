@@ -57,10 +57,13 @@ public class CustomerManager implements CustomerService {
         customer.setRole(Role.CUSTOMER);
         customer.setPassword(passwordEncoder.encode(createCustomerRequest.getPassword()));
 
-        this.customerRepository.save(customer);
+        customer = this.customerRepository.save(customer);
         var jwtToken = jwtService.generateToken(customer);
 
-        return AuthenticationResponse.builder().token(jwtToken).build();
+        AuthenticationResponse authenticationResponse = AuthenticationResponse.builder().token(jwtToken).build();
+        authenticationResponse.setUser(customer);
+
+        return authenticationResponse;
     }
 
     @Override
