@@ -56,10 +56,13 @@ public class AdminManager implements AdminService {
                 .map(createAdminRequest, Admin.class);
         admin.setRole(Role.ADMIN);
         admin.setPassword(passwordEncoder.encode(createAdminRequest.getPassword()));
-        this.adminRepository.save(admin);
+        admin = this.adminRepository.save(admin);
         var jwtToken = jwtService.generateToken(admin);
 
-        return AuthenticationResponse.builder().token(jwtToken).build();
+        AuthenticationResponse authenticationResponse = AuthenticationResponse.builder().token(jwtToken).build();
+        authenticationResponse.setUser(admin);
+
+        return authenticationResponse;
     }
 
     @Override

@@ -56,11 +56,13 @@ public class SellerManager implements SellerService {
                 .map(createSellerRequest, Seller.class);
         seller.setRole(Role.SELLER);
         seller.setPassword(passwordEncoder.encode(createSellerRequest.getPassword()));
-        this.sellerRepository.save(seller);
-
+        seller = this.sellerRepository.save(seller);
         var jwtToken = jwtService.generateToken(seller);
 
-        return AuthenticationResponse.builder().token(jwtToken).build();
+        AuthenticationResponse authenticationResponse = AuthenticationResponse.builder().token(jwtToken).build();
+        authenticationResponse.setUser(seller);
+
+        return authenticationResponse;
     }
 
     @Override
