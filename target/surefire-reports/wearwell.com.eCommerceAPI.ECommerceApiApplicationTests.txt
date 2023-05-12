@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: wearwell.com.eCommerceAPI.ECommerceApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.266 s - in wearwell.com.eCommerceAPI.ECommerceApiApplicationTests
