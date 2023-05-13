@@ -125,6 +125,7 @@ wearwell\com\eCommerceAPI\business\abstracts\CustomerService.class
 wearwell\com\eCommerceAPI\business\requests\CreateOrderRequest.class
 wearwell\com\eCommerceAPI\dataAccess\abstracts\CategoryRepository.class
 wearwell\com\eCommerceAPI\business\requests\UpdateProductRequest.class
+wearwell\com\eCommerceAPI\webApi\WebConfig.class
 wearwell\com\eCommerceAPI\business\requests\LoginRequest.class
 wearwell\com\eCommerceAPI\webApi\controllers\ProductsController.class
 wearwell\com\eCommerceAPI\business\requests\CreateSellerRequest.class

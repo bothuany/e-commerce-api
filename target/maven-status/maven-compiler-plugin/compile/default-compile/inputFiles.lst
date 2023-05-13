@@ -113,6 +113,7 @@ C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwel
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateProductRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\abstracts\AdminService.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\core\utilities\mappers\ModelMapperService.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\webApi\WebConfig.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateOrderItemRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\abstracts\ColorService.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\auth\AuthenticationResponse.java
