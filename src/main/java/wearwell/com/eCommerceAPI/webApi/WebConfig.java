@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins("http://localhost:3000","https://wearwell-shopping.vercel.app") // your reactjs URL
                 .allowedMethods("GET", "POST", "PATCH", "PUT", "DELETE")
-                .allowedHeaders("Content-Type") // Adjust headers you need to allow
+                .allowedHeaders("Content-Type","Authorization") // Adjust headers you need to allow
                 .allowCredentials(true); // Add only if you want to access cookie
     }
 
