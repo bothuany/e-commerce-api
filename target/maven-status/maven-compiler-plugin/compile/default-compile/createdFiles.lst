@@ -58,7 +58,6 @@ wearwell\com\eCommerceAPI\business\abstracts\OrderItemService.class
 wearwell\com\eCommerceAPI\business\responses\GetByIdProductResponse.class
 wearwell\com\eCommerceAPI\business\responses\GetMyOrdersDetailedResponse.class
 wearwell\com\eCommerceAPI\entities\concretes\OrderItem.class
-wearwell\com\eCommerceAPI\business\requests\RegisterRequest$RegisterRequestBuilder.class
 wearwell\com\eCommerceAPI\business\requests\CreateAdminRequest.class
 wearwell\com\eCommerceAPI\business\responses\GetByIdSellerResponse.class
 wearwell\com\eCommerceAPI\business\requests\ConfirmCartRequest.class
