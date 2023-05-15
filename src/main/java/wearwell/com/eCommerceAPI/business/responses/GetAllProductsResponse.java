@@ -18,7 +18,5 @@ public class GetAllProductsResponse {
     private double price;
     private List<String> images;
     private String categoryID;
-    //private Category category;
     private String sellerID;
-    //private Seller seller;
 }

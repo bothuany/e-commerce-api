@@ -78,6 +78,7 @@ C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwel
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateColorRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\rules\UserBusinessRules.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateSellerRequest.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetAllStocksByProductResponse.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\webApi\controllers\OrdersController.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetByIdInvoiceResponse.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\rules\PaymentBusinessRules.java
@@ -89,6 +90,8 @@ C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwel
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\dataAccess\abstracts\SellerRepository.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\abstracts\PaymentService.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\auth\AuthenticationService.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetMyProductsResponse.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetByNameProductResponse.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\dataAccess\abstracts\CategoryRepository.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\UpdateInvoiceRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateCustomerRequest.java
@@ -112,8 +115,10 @@ C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwel
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateOrderRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateProductRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\abstracts\AdminService.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetByIdSellerForProductsResponse.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\core\utilities\mappers\ModelMapperService.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\webApi\WebConfig.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\responses\GetAllProductsResponseForSearch.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\CreateOrderItemRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\abstracts\ColorService.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\auth\AuthenticationResponse.java
@@ -134,4 +139,5 @@ C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwel
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\entities\concretes\Invoice.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\webApi\controllers\UsersController.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\dataAccess\abstracts\UserRepository.java
+C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\business\requests\UpdateSaleRequest.java
 C:\programming\projects\e-commerce-api\e-commerce-api-main\src\main\java\wearwell\com\eCommerceAPI\entities\concretes\Customer.java

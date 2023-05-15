@@ -10,8 +10,8 @@ import wearwell.com.eCommerceAPI.business.abstracts.ProductService;
 import wearwell.com.eCommerceAPI.business.requests.CreateProductRequest;
 import wearwell.com.eCommerceAPI.business.requests.PutOnSaleRequest;
 import wearwell.com.eCommerceAPI.business.requests.UpdateProductRequest;
-import wearwell.com.eCommerceAPI.business.responses.GetAllProductsResponse;
-import wearwell.com.eCommerceAPI.business.responses.GetByIdProductResponse;
+import wearwell.com.eCommerceAPI.business.requests.UpdateSaleRequest;
+import wearwell.com.eCommerceAPI.business.responses.*;
 import wearwell.com.eCommerceAPI.entities.abstracts.Role;
 import wearwell.com.eCommerceAPI.entities.abstracts.User;
 
@@ -29,9 +29,29 @@ public class ProductsController {
         return new ResponseEntity<>(productService.getAll(), HttpStatus.OK);
     }
 
+    @GetMapping("/seller/{id}")
+    public ResponseEntity<List<GetMyProductsResponse>> getAllBySellerId(@PathVariable String id) {
+        User activeUser = authenticationService.activeUser();
+
+        if (activeUser.getId().equals(id) || activeUser.getRole().equals(Role.ADMIN)) {
+            return new ResponseEntity<>(productService.getAllBySeller(id), HttpStatus.OK);
+        }
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+    }
+    @GetMapping("/search/")
+    public ResponseEntity<List<GetAllProductsResponseForSearch>> search(@RequestParam String searchText, @RequestParam List<String> categories, @RequestParam List<String> colors, @RequestParam List<String> sizes, @RequestParam String sortBy) {
+        return new ResponseEntity<>(productService.search(searchText, categories, colors, sizes,sortBy ), HttpStatus.OK);
+    }
+
+
     @GetMapping("/{id}")
     public ResponseEntity<GetByIdProductResponse> getById(@PathVariable String id) {
         return new ResponseEntity<>(productService.getById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<GetByNameProductResponse> getProductByName(@RequestParam String name) {
+        return new ResponseEntity<>(productService.getProductByName(name), HttpStatus.OK);
     }
 
     @PostMapping()
@@ -71,7 +91,7 @@ public class ProductsController {
     public ResponseEntity<HttpStatus> delete(@PathVariable String id) {
         User activeUser = authenticationService.activeUser();
 
-        if ((activeUser.getId().equals(productService.getById(id).getSellerID())) || (activeUser.getRole().equals(Role.ADMIN))) {
+        if ((activeUser.getId().equals(productService.getById(id).getSeller().getId())) || (activeUser.getRole().equals(Role.ADMIN))) {
             this.productService.delete(id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }

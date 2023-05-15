@@ -88,6 +88,8 @@ wearwell\com\eCommerceAPI\dataAccess\abstracts\StockRepository.class
 wearwell\com\eCommerceAPI\business\requests\UpdateCategoryRequest.class
 wearwell\com\eCommerceAPI\business\abstracts\SellerService.class
 wearwell\com\eCommerceAPI\entities\concretes\Customer.class
+wearwell\com\eCommerceAPI\business\responses\GetAllStocksByProductResponse.class
+wearwell\com\eCommerceAPI\business\responses\GetByIdSellerForProductsResponse.class
 wearwell\com\eCommerceAPI\business\abstracts\InvoiceService.class
 wearwell\com\eCommerceAPI\webApi\controllers\CategoriesController.class
 wearwell\com\eCommerceAPI\business\requests\UpdateStockRequest.class
@@ -100,6 +102,7 @@ wearwell\com\eCommerceAPI\dataAccess\abstracts\OrderItemRepository.class
 wearwell\com\eCommerceAPI\entities\concretes\Order.class
 wearwell\com\eCommerceAPI\entities\concretes\Seller.class
 wearwell\com\eCommerceAPI\security\ApplicationConfig.class
+wearwell\com\eCommerceAPI\business\responses\GetByNameProductResponse.class
 wearwell\com\eCommerceAPI\auth\AuthenticationRequest.class
 wearwell\com\eCommerceAPI\entities\concretes\Product.class
 wearwell\com\eCommerceAPI\business\requests\UpdateInvoiceRequest.class
@@ -114,13 +117,16 @@ wearwell\com\eCommerceAPI\business\requests\UpdateSizeRequest.class
 wearwell\com\eCommerceAPI\webApi\controllers\UsersController.class
 wearwell\com\eCommerceAPI\business\abstracts\StockService.class
 wearwell\com\eCommerceAPI\business\responses\GetAllCategoriesResponse.class
+wearwell\com\eCommerceAPI\business\requests\UpdateSaleRequest.class
 wearwell\com\eCommerceAPI\dataAccess\abstracts\UserRepository.class
+wearwell\com\eCommerceAPI\business\responses\GetMyProductsResponse.class
 wearwell\com\eCommerceAPI\webApi\controllers\OrderItemsController.class
 wearwell\com\eCommerceAPI\business\requests\UpdateOrderRequest.class
 wearwell\com\eCommerceAPI\business\requests\CreateCustomerRequest.class
 wearwell\com\eCommerceAPI\business\responses\GetAllInvoicesResponse.class
 wearwell\com\eCommerceAPI\auth\AuthenticationRequest$AuthenticationRequestBuilder.class
 wearwell\com\eCommerceAPI\business\abstracts\CustomerService.class
+wearwell\com\eCommerceAPI\business\responses\GetAllProductsResponseForSearch.class
 wearwell\com\eCommerceAPI\business\requests\CreateOrderRequest.class
 wearwell\com\eCommerceAPI\dataAccess\abstracts\CategoryRepository.class
 wearwell\com\eCommerceAPI\business\requests\UpdateProductRequest.class
