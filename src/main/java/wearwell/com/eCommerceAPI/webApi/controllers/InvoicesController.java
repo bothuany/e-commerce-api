@@ -15,6 +15,7 @@ import wearwell.com.eCommerceAPI.business.responses.GetAllInvoicesResponse;
 import wearwell.com.eCommerceAPI.business.responses.GetByIdInvoiceResponse;
 import wearwell.com.eCommerceAPI.entities.abstracts.Role;
 import wearwell.com.eCommerceAPI.entities.abstracts.User;
+import wearwell.com.eCommerceAPI.entities.concretes.Order;
 
 import java.util.List;
 
@@ -103,12 +104,12 @@ public class InvoicesController {
     }
 
     @PostMapping("/confirm-cart")
-    public ResponseEntity<ConfirmCartRequest> confirmCart(@RequestBody @Valid ConfirmCartRequest confirmCartRequest) {
+    public ResponseEntity<String> confirmCart(@RequestBody @Valid ConfirmCartRequest confirmCartRequest) {
         User activeUser = authenticationService.activeUser();
 
-        this.orderService.confirmCart(confirmCartRequest, activeUser.getId());
+        return new ResponseEntity<>(this.orderService.confirmCart(confirmCartRequest, activeUser.getId()), HttpStatus.CREATED);
 
-        return new ResponseEntity<>(confirmCartRequest, HttpStatus.CREATED);
+
     }
 
 }

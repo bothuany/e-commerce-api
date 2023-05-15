@@ -118,7 +118,7 @@ public class OrderManager implements OrderService {
     }
 
     @Override
-    public void confirmCart(ConfirmCartRequest confirmCartRequest, String customerID) {
+    public String confirmCart(ConfirmCartRequest confirmCartRequest, String customerID) {
         orderBusinessRules.checkInStock(confirmCartRequest.getOrderItems());
 
         CreateOrderRequest createOrderRequest = confirmCartRequest.getOrder();
@@ -133,6 +133,7 @@ public class OrderManager implements OrderService {
 
         CreateInvoiceRequest createInvoiceRequest = new CreateInvoiceRequest(order.getId(), order.getOrderDate(), calculateAmount(order.getId()));
         invoiceService.add(createInvoiceRequest);
+        return order.getId();
     }
 
     @Override
