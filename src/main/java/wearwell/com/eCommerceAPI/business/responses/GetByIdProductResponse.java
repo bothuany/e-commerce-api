@@ -17,6 +17,6 @@ public class GetByIdProductResponse {
     private String details;
     private double price;
     private List<String> images;
-    private String categoryID;
-    private String sellerID;
+    private GetByIdCategoryResponse category;
+    private GetByIdSellerForProductsResponse seller;
 }
