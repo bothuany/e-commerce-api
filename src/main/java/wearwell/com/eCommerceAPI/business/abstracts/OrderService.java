@@ -21,7 +21,7 @@ public interface OrderService {
     Order update(UpdateOrderRequest updateOrderRequest);
     void delete(String id);
 
-    void confirmCart(ConfirmCartRequest confirmCartRequest,String customerID);
+    String confirmCart(ConfirmCartRequest confirmCartRequest,String customerID);
     double calculateAmount(String id);
 
 
